@@ -12,10 +12,10 @@ class ComposerStaticInit2b9b050a2cb56ca2e46e2b089d3dc722
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -54,6 +54,7 @@ class ComposerStaticInit2b9b050a2cb56ca2e46e2b089d3dc722
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Sven\\ArtisanView\\' => 17,
         ),
         'R' => 
         array (
@@ -198,6 +199,10 @@ class ComposerStaticInit2b9b050a2cb56ca2e46e2b089d3dc722
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Sven\\ArtisanView\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sven/artisan-view/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -319,11 +324,13 @@ class ComposerStaticInit2b9b050a2cb56ca2e46e2b089d3dc722
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Admin\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/LoginController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\Home\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Home/LoginController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -3013,6 +3020,27 @@ class ComposerStaticInit2b9b050a2cb56ca2e46e2b089d3dc722
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
+        'Sven\\ArtisanView\\BlockBuilder' => __DIR__ . '/..' . '/sven/artisan-view/src/BlockBuilder.php',
+        'Sven\\ArtisanView\\BlockStack' => __DIR__ . '/..' . '/sven/artisan-view/src/BlockStack.php',
+        'Sven\\ArtisanView\\Blocks\\Block' => __DIR__ . '/..' . '/sven/artisan-view/src/Blocks/Block.php',
+        'Sven\\ArtisanView\\Blocks\\Extend' => __DIR__ . '/..' . '/sven/artisan-view/src/Blocks/Extend.php',
+        'Sven\\ArtisanView\\Blocks\\InlineSection' => __DIR__ . '/..' . '/sven/artisan-view/src/Blocks/InlineSection.php',
+        'Sven\\ArtisanView\\Blocks\\Push' => __DIR__ . '/..' . '/sven/artisan-view/src/Blocks/Push.php',
+        'Sven\\ArtisanView\\Blocks\\Section' => __DIR__ . '/..' . '/sven/artisan-view/src/Blocks/Section.php',
+        'Sven\\ArtisanView\\Commands\\MakeView' => __DIR__ . '/..' . '/sven/artisan-view/src/Commands/MakeView.php',
+        'Sven\\ArtisanView\\Commands\\ScrapView' => __DIR__ . '/..' . '/sven/artisan-view/src/Commands/ScrapView.php',
+        'Sven\\ArtisanView\\Config' => __DIR__ . '/..' . '/sven/artisan-view/src/Config.php',
+        'Sven\\ArtisanView\\Destroyer' => __DIR__ . '/..' . '/sven/artisan-view/src/Destroyer.php',
+        'Sven\\ArtisanView\\Exceptions\\UnsupportedException' => __DIR__ . '/..' . '/sven/artisan-view/src/Exceptions/UnsupportedException.php',
+        'Sven\\ArtisanView\\Generator' => __DIR__ . '/..' . '/sven/artisan-view/src/Generator.php',
+        'Sven\\ArtisanView\\PathHelper' => __DIR__ . '/..' . '/sven/artisan-view/src/PathHelper.php',
+        'Sven\\ArtisanView\\ServiceProvider' => __DIR__ . '/..' . '/sven/artisan-view/src/ServiceProvider.php',
+        'Sven\\ArtisanView\\ViewActor' => __DIR__ . '/..' . '/sven/artisan-view/src/ViewActor.php',
+        'Sven\\ArtisanView\\Voters\\ExtendsParent' => __DIR__ . '/..' . '/sven/artisan-view/src/Voters/ExtendsParent.php',
+        'Sven\\ArtisanView\\Voters\\SectionsInParent' => __DIR__ . '/..' . '/sven/artisan-view/src/Voters/SectionsInParent.php',
+        'Sven\\ArtisanView\\Voters\\StacksFromParent' => __DIR__ . '/..' . '/sven/artisan-view/src/Voters/StacksFromParent.php',
+        'Sven\\ArtisanView\\Voters\\Voter' => __DIR__ . '/..' . '/sven/artisan-view/src/Voters/Voter.php',
+        'Sven\\ArtisanView\\Voters\\YieldsFromParent' => __DIR__ . '/..' . '/sven/artisan-view/src/Voters/YieldsFromParent.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',

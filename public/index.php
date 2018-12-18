@@ -6,7 +6,16 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
+#$redis = new Redis();
 
+#$redis->connect('127.0.0.1', 6379);
+#echo '<pre>';
+ #var_dump($redis); die;
+
+#echo 'successfuly';
+#echo 'service is runing:'.$redis->ping();
+#phpinfo();
+#die;
 define('LARAVEL_START', microtime(true));
 
 /*

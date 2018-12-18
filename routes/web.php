@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('lege_admin', 'Home\LoginController@index');
+// Route::post('admin/lege_login', 'Home\LoginController@login');
+Route::get('admin/lege', 'Admin\LoginController@login');
