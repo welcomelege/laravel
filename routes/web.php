@@ -18,4 +18,6 @@ Route::get('/', function () {
 
 Route::get('lege_admin', 'Home\LoginController@index');
 // Route::post('admin/lege_login', 'Home\LoginController@login');
-Route::get('admin/lege', 'Admin\LoginController@login');
+Route::get('lege_admin/login', 'Admin\LoginController@login');
+Route::post('lege_admin/dologin', 'Admin\LoginController@dologin');
+Route::get('admin/index', 'Admin\IndexController@index');
